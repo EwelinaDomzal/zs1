@@ -7,19 +7,19 @@
 <body>
    <script>
     var haslo = prompt('Podaj hasło');
-    var pen = haslo.length;
+    var dlugosc = haslo.length;
     var dl;
-    switch (pen <=0) {
+    switch (dlugosc <=0) {
         case true:
         dl = "Błędne";
         break;
         case false:
-    switch(pen > 0 && pen <=4){
+    switch(dlugosc > 0 && dlugosc <=4){
         case true:
         dl = "krótkie".fontcolor("red");
         break;
         case false:
-    switch(pen > 4 && pen <=8){
+    switch(dlugosc > 4 && dlugosc <=8){
         case true:
         dl = "średnie".fontcolor("blue")
         break;
